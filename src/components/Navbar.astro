@@ -5,6 +5,20 @@ const navLinks = [
   { name: 'Find Jobs', href: '/jobs' },
   { name: 'Blog', href: '/blog' }
 ];
+
+const exploreDropdown = [
+  { name: 'Popular', href: '/popular', icon: '↗', isSpecial: true },
+  { name: 'New and Noteworthy', href: '/new', icon: '✧', isSpecial: true },
+  { type: 'divider' },
+  { name: 'Product Design', href: '/category/product-design', isMonaSans: true },
+  { name: 'Web Design', href: '/category/web-design', isMonaSans: true },
+  { name: 'Animation', href: '/category/animation', isMonaSans: true },
+  { name: 'Branding', href: '/category/branding', isMonaSans: true },
+  { name: 'Illustration', href: '/category/illustration', isMonaSans: true },
+  { name: 'Mobile', href: '/category/mobile', isMonaSans: true },
+  { name: 'Typography', href: '/category/typography', isMonaSans: true },
+  { name: 'Print', href: '/category/print', isMonaSans: true }
+];
 ---
 
 <nav class="fixed top-0 left-0 right-0 bg-white z-50">
@@ -31,20 +45,39 @@ const navLinks = [
         </svg>
       </a>
       
-      <div class="hidden lg:flex items- justify-start space-x-6">
-        
+      <div class="hidden lg:flex items-center space-x-6">
         {navLinks.map((link) => (
-          <a
-            href={link.href}
-            class="text-black hover:text-[#0d0c22] text-[14px] font-bold flex items-center"
-          >
-            {link.name}
-            {link.hasDropdown && (
-              <svg class="w-4 h-4 ml-1 mt-[2px]" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 6.9L9.1 3.8C9.3 3.6 9.5 3.6 9.7 3.8C9.9 4 9.9 4.2 9.7 4.4L6.3 7.8C6.1 8 5.9 8 5.7 7.8L2.3 4.4C2.1 4.2 2.1 4 2.3 3.8C2.5 3.6 2.7 3.6 2.9 3.8L6 6.9Z" fill="currentColor"/>
-              </svg>
+          <div class="relative group">
+            <a
+              href={link.href}
+              class="text-black hover:text-[#0d0c22] text-[14px] font-bold flex items-center"
+            >
+              {link.name}
+              {link.hasDropdown && (
+                <svg class="w-4 h-4 ml-1 mt-[2px]" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 6.9L9.1 3.8C9.3 3.6 9.5 3.6 9.7 3.8C9.9 4 9.9 4.2 9.7 4.4L6.3 7.8C6.1 8 5.9 8 5.7 7.8L2.3 4.4C2.1 4.2 2.1 4 2.3 3.8C2.5 3.6 2.7 3.6 2.9 3.8L6 6.9Z" fill="currentColor"/>
+                </svg>
+              )}
+            </a>
+            
+            {link.name === 'Explore' && (
+              <div class="absolute hidden group-hover:block top-full left-0 bg-white border border-[#e7e7e9] rounded-lg shadow-lg py-4 w-[240px] mt-1">
+                {exploreDropdown.map((item) => (
+                  item.type === 'divider' 
+                    ? <hr class="my-2 border-[#e7e7e9]" />
+                    : <a
+                        href={item.href}
+                        class={`block px-4 py-2 text-[14px] hover:bg-[#f8f7f4] text-[#0d0c22] flex items-center font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] ${
+                          item.isSpecial ? "font-semibold" : ""
+                        }`}
+                      >
+                        {item.icon && <span class="mr-2">{item.icon}</span>}
+                        {item.name}
+                      </a>
+                ))}
+              </div>
             )}
-          </a>
+          </div>
         ))}
       </div>
     </div>
@@ -99,4 +132,10 @@ const navLinks = [
       mobileMenu.classList.toggle('hidden');
     });
   }
-</script> 
+</script>
+
+<style>
+  .group:hover .group-hover\:block {
+    display: block;
+  }
+</style> 
