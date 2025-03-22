@@ -1,4 +1,12 @@
 ---
+interface DropdownItem {
+  name?: string;
+  href?: string;
+  icon?: string;
+  isSpecial?: boolean;
+  type?: 'divider';
+}
+
 const navLinks = [
   { name: 'Explore', href: '#', hasDropdown: true },
   { name: 'Hire a Designer', href: '#', hasDropdown: true },
@@ -6,18 +14,18 @@ const navLinks = [
   { name: 'Blog', href: '/blog' }
 ];
 
-const exploreDropdown = [
+const exploreDropdown: DropdownItem[] = [
   { name: 'Popular', href: '/popular', icon: '↗', isSpecial: true },
   { name: 'New and Noteworthy', href: '/new', icon: '✧', isSpecial: true },
   { type: 'divider' },
-  { name: 'Product Design', href: '/category/product-design', isMonaSans: true },
-  { name: 'Web Design', href: '/category/web-design', isMonaSans: true },
-  { name: 'Animation', href: '/category/animation', isMonaSans: true },
-  { name: 'Branding', href: '/category/branding', isMonaSans: true },
-  { name: 'Illustration', href: '/category/illustration', isMonaSans: true },
-  { name: 'Mobile', href: '/category/mobile', isMonaSans: true },
-  { name: 'Typography', href: '/category/typography', isMonaSans: true },
-  { name: 'Print', href: '/category/print', isMonaSans: true }
+  { name: 'Product Design', href: '/category/product-design' },
+  { name: 'Web Design', href: '/category/web-design' },
+  { name: 'Animation', href: '/category/animation' },
+  { name: 'Branding', href: '/category/branding' },
+  { name: 'Illustration', href: '/category/illustration' },
+  { name: 'Mobile', href: '/category/mobile' },
+  { name: 'Typography', href: '/category/typography' },
+  { name: 'Print', href: '/category/print' }
 ];
 ---
 
@@ -61,20 +69,24 @@ const exploreDropdown = [
             </a>
             
             {link.name === 'Explore' && (
-              <div class="absolute hidden group-hover:block top-full left-0 bg-white border border-[#e7e7e9] rounded-lg shadow-lg py-4 w-[240px] mt-1">
-                {exploreDropdown.map((item) => (
-                  item.type === 'divider' 
-                    ? <hr class="my-2 border-[#e7e7e9]" />
-                    : <a
-                        href={item.href}
-                        class={`block px-4 py-2 text-[14px] hover:bg-[#f8f7f4] text-[#0d0c22] flex items-center font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] ${
-                          item.isSpecial ? "font-semibold" : ""
-                        }`}
-                      >
-                        {item.icon && <span class="mr-2">{item.icon}</span>}
-                        {item.name}
-                      </a>
-                ))}
+              <div class="relative">
+                {/* Invisible gap filler to prevent dropdown from closing */}
+                <div class="absolute h-[20px] w-full -bottom-[20px]"></div>
+                <div class="absolute hidden group-hover:block top-[calc(100%+8px)] left-0 bg-white border border-[#e7e7e9] rounded-lg shadow-lg py-4 w-[240px]">
+                  {exploreDropdown.map((item) => (
+                    item.type === 'divider' 
+                      ? <hr class="my-2 border-[#e7e7e9]" />
+                      : <a
+                          href={item.href}
+                          class={`block px-4 py-2 text-[14px] hover:text-gray-500 text-[#0d0c22] flex items-center font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] ${
+                            item.isSpecial ? "font-bold" : ""
+                          }`}
+                        >
+                          {item.icon && <span class="mr-2">{item.icon}</span>}
+                          {item.name}
+                        </a>
+                  ))}
+                </div>
               </div>
             )}
           </div>
