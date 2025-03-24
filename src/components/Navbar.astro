@@ -8,24 +8,47 @@ interface DropdownItem {
 }
 
 const navLinks = [
-  { name: 'Explore', href: '#', hasDropdown: true },
-  { name: 'Hire a Designer', href: '#', hasDropdown: true },
-  { name: 'Find Jobs', href: '/jobs' },
-  { name: 'Blog', href: '/blog' }
+  { name: 'Explore', href: '/#', hasDropdown: true },
+  { name: 'Hire a Designer', href: '/#', hasDropdown: true },
+  { name: 'Find Jobs', href: '/#' },
+  { name: 'Blog', href: '/#' }
 ];
 
 const exploreDropdown: DropdownItem[] = [
-  { name: 'Popular', href: '/popular', icon: '↗', isSpecial: true },
-  { name: 'New and Noteworthy', href: '/new', icon: '✧', isSpecial: true },
+  { name: 'Popular', href: '/#', icon: '↗', isSpecial: true },
+  { name: 'New and Noteworthy', href: '/#', icon: '✧', isSpecial: true },
   { type: 'divider' },
-  { name: 'Product Design', href: '/category/product-design' },
-  { name: 'Web Design', href: '/category/web-design' },
-  { name: 'Animation', href: '/category/animation' },
-  { name: 'Branding', href: '/category/branding' },
-  { name: 'Illustration', href: '/category/illustration' },
-  { name: 'Mobile', href: '/category/mobile' },
-  { name: 'Typography', href: '/category/typography' },
-  { name: 'Print', href: '/category/print' }
+  { name: 'Product Design', href: '/#' },
+  { name: 'Web Design', href: '/#' },
+  { name: 'Animation', href: '/#' },
+  { name: 'Branding', href: '/#' },
+  { name: 'Illustration', href: '/#' },
+  { name: 'Mobile', href: '/#' },
+  { name: 'Typography', href: '/#' },
+  { name: 'Print', href: '/#' }
+];
+
+const hireDesignerDropdown: DropdownItem[] = [
+  {
+    name: 'Browse Freelancers',
+    href: '/#',
+    icon: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M15.7656 14.6895L10.6934 9.61719C11.4805 8.59961 11.9062 7.35547 11.9062 6.04688C11.9062 4.48047 11.2949 3.01172 10.1895 1.90234C9.08398 0.792969 7.61133 0.182617 6.04688 0.182617C4.48242 0.182617 3.00977 0.794922 1.9043 1.90234C0.794922 3.00977 0.182617 4.48047 0.182617 6.04688C0.182617 7.61133 0.794922 9.08398 1.9043 10.1895C3.00977 11.2969 4.48047 11.9062 6.04688 11.9062C7.35547 11.9062 8.59766 11.4805 9.61523 10.6953L14.6875 15.7656C14.7024 15.7805 14.72 15.7923 14.7395 15.8004C14.7589 15.8084 14.7797 15.8126 14.8008 15.8126C14.8218 15.8126 14.8427 15.8084 14.8621 15.8004C14.8815 15.7923 14.8992 15.7805 14.9141 15.7656L15.7656 14.916C15.7805 14.9011 15.7923 14.8835 15.8004 14.864C15.8084 14.8446 15.8126 14.8238 15.8126 14.8027C15.8126 14.7817 15.8084 14.7609 15.8004 14.7414C15.7923 14.722 15.7805 14.7043 15.7656 14.6895Z" fill="currentColor"/></svg>'
+  },
+  {
+    name: 'Purchase Services',
+    href: '/#',
+    icon: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 3h-2V2c0-.6-.4-1-1-1h-5c-.6 0-1 .4-1 1v1h-2c-.6 0-1 .4-1 1v10c0 .6.4 1 1 1h11c.6 0 1-.4 1-1V4c0-.6-.4-1-1-1zM5.5 2h5v1h-5V2z" fill="currentColor"/></svg>'
+  },
+  {
+    name: 'Submit a Project Brief',
+    href: '/#',
+    icon: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm-1 9H3V7h10v2z" fill="currentColor"/></svg>'
+  },
+  {
+    name: 'Post a Full-Time Job',
+    href: '/#',
+    icon: '<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 4h-3V2c0-.6-.4-1-1-1H6c-.6 0-1 .4-1 1v2H2c-.6 0-1 .4-1 1v8c0 .6.4 1 1 1h12c.6 0 1-.4 1-1V5c0-.6-.4-1-1-1zm-4 0H6V2.5c0-.3.2-.5.5-.5h3c.3 0 .5.2.5.5V4z" fill="currentColor"/></svg>'
+  }
 ];
 ---
 
@@ -70,7 +93,6 @@ const exploreDropdown: DropdownItem[] = [
             
             {link.name === 'Explore' && (
               <div class="relative">
-                {/* Invisible gap filler to prevent dropdown from closing */}
                 <div class="absolute h-[20px] w-full -bottom-[20px]"></div>
                 <div class="absolute hidden group-hover:block top-[calc(100%+8px)] left-0 bg-white border border-[#e7e7e9] rounded-lg shadow-lg py-4 w-[240px]">
                   {exploreDropdown.map((item) => (
@@ -89,6 +111,23 @@ const exploreDropdown: DropdownItem[] = [
                 </div>
               </div>
             )}
+
+            {link.name === 'Hire a Designer' && (
+              <div class="relative">
+                <div class="absolute h-[20px] w-full -bottom-[20px]"></div>
+                <div class="absolute hidden group-hover:block top-[calc(100%+8px)] left-0 bg-white border border-[#e7e7e9] rounded-lg shadow-lg py-2 w-[240px]">
+                  {hireDesignerDropdown.map((item) => (
+                    <a
+                      href={item.href}
+                      class="block px-4 py-[10px] text-[14px] flex items-center gap-3 font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif]"
+                    >
+                      {item.icon && <span class="text-[#6e6d7a] shrink-0" set:html={item.icon} />}
+                      <span class="hover:text-gray-500 font-semibold">{item.name}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </div>
@@ -96,14 +135,14 @@ const exploreDropdown: DropdownItem[] = [
 
       <div class="flex items-center space-x-3">
         <a
-          href="/signup"
+          href="/#"
           class="hidden lg:block text-[14px] font-bold text-black hover:text-[#0d0c22]"
         >
           Sign up
         </a>
         <a
-          href="/login"
-          class="text-[14px] font-medium px-[24px] py-[10px] rounded-full text-white bg-[#0d0c22] hover:bg-[#0d0c22]/transition-colors"
+          href="/#"
+          class="text-[14px] font-bold px-[24px] py-[10px] rounded-full text-white bg-[#0d0c22] hover:bg-[#0d0c22]/transition-colors"
         >
           Log In
         </a>
@@ -120,14 +159,14 @@ const exploreDropdown: DropdownItem[] = [
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class="block py-2 text-base font-medium text-[#6e6d7a] hover:text-[#0d0c22]"
+          class="block py-2 text-base font-seminbold text-[#6e6d7a] hover:text-[#0d0c22]"
         >
           {link.name}
         </a>
       ))}
       <a
-        href="/signup"
-        class="block py-2 text-base font-medium text-[#6e6d7a] hover:text-[#0d0c22]"
+        href="/#"
+        class="block py-2 text-base font-semibold text-[#6e6d7a] hover:text-[#0d0c22]"
       >
         Sign up
       </a>
@@ -149,5 +188,17 @@ const exploreDropdown: DropdownItem[] = [
 <style>
   .group:hover .group-hover\:block {
     display: block;
+    animation: fadeIn 0.2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 </style> 
