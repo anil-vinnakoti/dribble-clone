@@ -1,0 +1,95 @@
+---
+const labels = [
+  "Discover",
+  "Animation",
+  "Branding",
+  "Illustration",
+  "Mobile",
+  "Print",
+  "Product Design",
+  "Typography",
+  "Web Design"
+];
+---
+
+<div class="relative">
+  <!-- Divider line -->
+  
+  <div class="absolute left-0 top-[6px] z-10">
+    <button id="scroll-left" class="w-8 h-8 flex items-center justify-start bg-gradient-to-r from-white via-white to-transparent hover:text-[#0d0c22] transition-colors text-[#6e6d7a]">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m15 18-6-6 6-6"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Filter labels -->
+  <div class="overflow-x-auto scrollbar-hide px-4">
+    <div class="flex items-center gap-6 min-w-max pt-3 pb-3">
+      {labels.map(label => (
+        <a 
+          href="/#" 
+          class="text-[14px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] font-semibold hover:text-[#0d0c22] whitespace-nowrap transition-colors"
+        >
+          {label}
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <div class="absolute right-0 top-[6px] z-10">
+    <button id="scroll-right" class="w-8 h-8 flex items-center justify-end bg-gradient-to-l from-white via-white to-transparent hover:text-[#0d0c22] transition-colors text-[#6e6d7a]">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18 6-6-6-6"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  const scrollContainer = document.querySelector('.overflow-x-auto');
+  const leftArrow = document.getElementById('scroll-left');
+  const rightArrow = document.getElementById('scroll-right');
+  const scrollAmount = 200;
+
+  if (scrollContainer && leftArrow && rightArrow) {
+    leftArrow.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
+    rightArrow.addEventListener('click', () => {
+      scrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
+    // Show/hide arrows based on scroll position
+    scrollContainer.addEventListener('scroll', () => {
+      const isAtStart = scrollContainer.scrollLeft === 0;
+      const isAtEnd = scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth;
+      
+      leftArrow.hidden = isAtStart;
+      rightArrow.hidden = isAtEnd;
+    });
+
+    // Initial check for arrow visibility
+    const isAtStart = scrollContainer.scrollLeft === 0;
+    const isAtEnd = scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth;
+    leftArrow.hidden = isAtStart;
+    rightArrow.hidden = isAtEnd;
+  }
+</script>
+
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style> 

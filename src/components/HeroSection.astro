@@ -1,3 +1,7 @@
+---
+import FilterLabels from './hero/FilterLabels.astro';
+---
+
 <section class="pt-[112px] lg:pt-[144px] pb-8 px-4 max-w-[94vw] mx-auto">
   <div class="text-center">
     <h1 class="text-[32px] md:text-[62px] font-['Source_Serif_4',_Georgia,_serif] text-[#0d0c22] mb-6 leading-[1.2] max-w-[920px] mx-auto">
@@ -89,6 +93,10 @@
           </div>
         </div>
 
+        <div class="hidden lg:block">
+          <FilterLabels />
+        </div>
+
         <button class="flex items-center gap-2 px-4 py-2 text-[13px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] bg-white border border-[#e7e7e9] rounded-full hover:border-[#0d0c22] transition-colors">
           <div class="flex items-center gap-1">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +110,7 @@
       </div>
 
       <!-- Category Scroll Section -->
-      <div class="relative mt-6">
+      <div class="relative mt-6 lg:hidden">
         <!-- Divider line -->
         
         <div class="absolute left-0 top-[6px] z-10">
@@ -113,19 +121,8 @@
           </button>
         </div>
 
-        <div class="overflow-x-auto scrollbar-hide px-4">
-          <div class="flex items-center gap-6 min-w-max pt-3 pb-3">
-            <a href="/#" class="text-[14px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] font-semibold  hover:text-[#0d0c22] whitespace-nowrap transition-colors">Discover</a>
-            <a href="/#" class="text-[14px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] font-semibold hover:text-[#0d0c22] whitespace-nowrap transition-colors">Animation</a>
-            <a href="/#" class="text-[14px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] font-semibold hover:text-[#0d0c22] whitespace-nowrap transition-colors">Branding</a>
-            <a href="/#" class="text-[14px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] font-semibold hover:text-[#0d0c22] whitespace-nowrap transition-colors">Illustration</a>
-            <a href="/#" class="text-[14px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] font-semibold hover:text-[#0d0c22] whitespace-nowrap transition-colors">Mobile</a>
-            <a href="/#" class="text-[14px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] font-semibold hover:text-[#0d0c22] whitespace-nowrap transition-colors">Print</a>
-            <a href="/#" class="text-[14px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] font-semibold hover:text-[#0d0c22] whitespace-nowrap transition-colors">Product Design</a>
-            <a href="/#" class="text-[14px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] font-semibold hover:text-[#0d0c22] whitespace-nowrap transition-colors">Typography</a>
-            <a href="/#" class="text-[14px] font-['Mona_Sans','Helvetica_Neue',Helvetica,Arial,sans-serif] text-[#0d0c22] font-semibold hover:text-[#0d0c22] whitespace-nowrap transition-colors">Web Design</a>
-          </div>
-        </div>
+        <!-- Filter labels -->
+       <FilterLabels />
 
         <div class="absolute right-0 top-[6px] z-10">
           <button id="scroll-right" class="w-8 h-8 flex items-center justify-end bg-gradient-to-l from-white via-white to-transparent hover:text-[#0d0c22] transition-colors text-[#6e6d7a]">
