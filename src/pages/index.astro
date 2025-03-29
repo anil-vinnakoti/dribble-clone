@@ -3,12 +3,22 @@ import "../styles/global.css";
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import HeroSection from '../components/HeroSection.astro';
+import ShotsGrid from '../components/ShotsGrid.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout title="Dribbble - Discover the World's Top Designers & Creative Professionals">
-	<Navbar />
-	<HeroSection />
+	<main>
+		<Navbar />
+		<HeroSection />
+		<ShotsGrid />
+	</main>
 </Layout>
+
+<style>
+	main {
+		min-height: 100vh;
+	}
+</style>
