@@ -5,9 +5,9 @@ import ShotCard from './ShotCard.astro';
 const shots = mockShots;
 ---
 
-<section class="shots-grid">
-  <div class="container mx-auto px-4 md:px-6">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<section class="shots-grid mx-auto ">
+  <div class="">
+    <div class="grid gap-10 justify-center" style="grid-template-columns: repeat(auto-fill, 318px);">
       {shots.map((shot) => (
         <ShotCard shot={shot} />
       ))}
@@ -18,7 +18,7 @@ const shots = mockShots;
 <style>
   .shots-grid {
     padding: 2rem 0;
-    background-color: #f8f8f8;
+    max-width: 92vw;
   }
 
   @media (min-width: 1536px) {
