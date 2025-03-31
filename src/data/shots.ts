@@ -15,8 +15,7 @@ export const mockShots: Shot[] = [
   {
     id: 1,
     title: "Modern Dashboard Design",
-    imageUrl:
-      "https://cdn.dribbble.com/userupload/13367773/file/original-a7b2afa4c5d7a7f6b1b4c2c0c6c0f9c8.png?resize=1504x1128",
+    imageUrl: "/cardImages/1.png",
     views: 12500,
     likes: 1250,
     user: {
