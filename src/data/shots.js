@@ -1,9 +1,7 @@
-import cardImage from "../assets/cardImages/1.jpg";
-
 export const mockShots = [
   {
     id: 1,
-    title: "Finance Mobile App",
+    title: "Chat GPT 4 Branding Concept",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42727877/file/original-fcbf9d36202e2424f8b520982e3ace5b.jpg?format=webp&resize=1200x900&vertical=center",
     views: 15000,
@@ -17,7 +15,7 @@ export const mockShots = [
   },
   {
     id: 2,
-    title: "E-commerce Dashboard",
+    title: "Sustainable contribution selector percentage picker",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42726643/file/still-f4d7c3ae2d40dde8747e8c1b1ae0f50b.png?format=webp&resize=1200x900&vertical=center",
     views: 18000,
@@ -31,7 +29,7 @@ export const mockShots = [
   },
   {
     id: 3,
-    title: "Social Media Analytics",
+    title: "Left",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42605269/file/original-4444791b49d47457ba419999bd831cf0.png?format=webp&resize=320x240&vertical=center",
     views: 15600,
@@ -45,7 +43,7 @@ export const mockShots = [
   },
   {
     id: 4,
-    title: "Fitness Tracking Interface",
+    title: "Let down your hair",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42729747/file/original-cef276debf81a36565c7673d9f50196a.jpg?format=webp&resize=320x240&vertical=center",
     views: 8900,
@@ -59,7 +57,7 @@ export const mockShots = [
   },
   {
     id: 5,
-    title: "Weather App Design",
+    title: "Kovre Winery Logo Exploration",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42729331/file/original-6f570bd3532b35c0e5a48436ae6c7495.jpg?format=webp&resize=320x240&vertical=center",
     views: 11200,
@@ -73,7 +71,7 @@ export const mockShots = [
   },
   {
     id: 6,
-    title: "Task Management Platform",
+    title: "Prana Logo Design",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42728753/file/original-3b22df46beda27b06f0e720e7899a919.png?format=webp&resize=320x240&vertical=center",
     views: 13400,
@@ -87,7 +85,7 @@ export const mockShots = [
   },
   {
     id: 7,
-    title: "Music Player App",
+    title: "TheSatge.AI Logo Design",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42729729/file/original-2d4967ea14c18951ab5f61fb245e9254.png?format=webp&resize=320x240&vertical=center",
     views: 17800,
@@ -101,7 +99,7 @@ export const mockShots = [
   },
   {
     id: 8,
-    title: "Travel Booking Interface",
+    title: "Cloud Paper",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42729995/file/original-3e599fe55c81340e56d2232de1247db6.png?format=webp&resize=320x240&vertical=center",
     views: 14300,
@@ -115,7 +113,7 @@ export const mockShots = [
   },
   {
     id: 9,
-    title: "Smart Home Control",
+    title: "FG",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42723824/file/original-f0718554d6951c3e95e53ae7f7ca44d2.jpg?crop=116x87-1480x1113&format=webp&resize=320x240&vertical=center",
     views: 19200,
@@ -129,7 +127,7 @@ export const mockShots = [
   },
   {
     id: 10,
-    title: "Food Delivery App",
+    title: "Infelctive.AI Logo",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42730212/file/original-097b7de8cb12becdc3406f1639c38e94.png?format=webp&resize=320x240&vertical=center",
     views: 16500,
@@ -143,7 +141,7 @@ export const mockShots = [
   },
   {
     id: 11,
-    title: "Investment Portfolio Dashboard",
+    title: "Logo design projects, 2024 - 2025-portfolio",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42725555/file/original-20aedac6bc4f06e645d014db07602d4a.png?format=webp&resize=320x240&vertical=center",
     views: 21000,
@@ -157,7 +155,7 @@ export const mockShots = [
   },
   {
     id: 12,
-    title: "Fitness Goal Tracker",
+    title: "Finergy UIkit on UI8",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42722301/file/still-1559ba79c25109aa2bc2fd638975e5d0.png?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -171,7 +169,7 @@ export const mockShots = [
   },
   {
     id: 13,
-    title: "Fitness Goal Tracker",
+    title: "Continual - Product",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42727468/file/original-bd6377798fb5e8d72767f692f547b7d2.png?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -185,7 +183,7 @@ export const mockShots = [
   },
   {
     id: 14,
-    title: "Fitness Goal Tracker",
+    title: "Smart Home Mobile App",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42725534/file/original-c8658da316dc79268aa3a2a04a53e74f.jpg?crop=0x0-3201x2401&format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -199,7 +197,7 @@ export const mockShots = [
   },
   {
     id: 15,
-    title: "Fitness Goal Tracker",
+    title: "Arrows + H monogram",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42726637/file/original-a950c9f31ac4dcf157e1245f4f730578.jpg?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -213,7 +211,7 @@ export const mockShots = [
   },
   {
     id: 16,
-    title: "Fitness Goal Tracker",
+    title: "Coffee shop's stickers",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42725862/file/original-42352ddfd91c4b3310c6f5ba116c5ca5.jpg?crop=221x166-2179x1634&format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -227,7 +225,7 @@ export const mockShots = [
   },
   {
     id: 17,
-    title: "Fitness Goal Tracker",
+    title: "Person + Flame logo design(3D version)",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42726745/file/original-359091766fa8c75d9685fcd39c8d9da2.png?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -241,7 +239,7 @@ export const mockShots = [
   },
   {
     id: 18,
-    title: "Fitness Goal Tracker",
+    title: "Core 2.0 - Dashobard Builder - Mobile View",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42728461/file/original-b3da055f9d7e9bfbdb278b4867d808de.png?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -253,23 +251,10 @@ export const mockShots = [
       isPro: false
     }
   },
-  {
-    id: 19,
-    title: "Fitness Goal Tracker",
-    imageUrl:
-      "https://cdn.dribbble.com/userupload/42722301/file/still-1559ba79c25109aa2bc2fd638975e5d0.png?format=webp&resize=320x240&vertical=center",
-    views: 18700,
-    likes: 2198,
-    user: {
-      name: "Michael Scott",
-      avatarUrl:
-        "https://cdn.dribbble.com/users/5031392/avatars/normal/0f9e567f5caf3f8f9469c7b89a319bc6.png?1674226456",
-      isPro: false
-    }
-  },
+
   {
     id: 20,
-    title: "Fitness Goal Tracker",
+    title: "Tuna",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42726723/file/original-c27119a4fd12f751134dc28a80ecd7af.jpg?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -283,7 +268,7 @@ export const mockShots = [
   },
   {
     id: 21,
-    title: "Fitness Goal Tracker",
+    title: "Happy Watermelon WSF",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42728287/file/still-12faf125dd2734aa54b21b7c54f7c11d.gif?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -297,7 +282,7 @@ export const mockShots = [
   },
   {
     id: 22,
-    title: "Fitness Goal Tracker",
+    title: "Shining Start Saturn Logo",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42726626/file/original-20887ab9aa0cd77d929b89984e8a036c.jpg?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -311,7 +296,7 @@ export const mockShots = [
   },
   {
     id: 23,
-    title: "Fitness Goal Tracker",
+    title: "Kinemeric approved logo",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42725079/file/still-44824f26ac164b1160900c3c70147ae3.png?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -325,7 +310,7 @@ export const mockShots = [
   },
   {
     id: 24,
-    title: "Fitness Goal Tracker",
+    title: "Bullo invite landing page 3D animation",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42705208/file/original-1a2c8a1ca798220bd770e2c30f564199.png?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -339,7 +324,7 @@ export const mockShots = [
   },
   {
     id: 25,
-    title: "Fitness Goal Tracker",
+    title: "Atlas Core",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42726955/file/original-5ed5f258404f5a03ab74d921fe07ec75.png?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -353,7 +338,7 @@ export const mockShots = [
   },
   {
     id: 26,
-    title: "Fitness Goal Tracker",
+    title: "Valley Sunset",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42727081/file/original-9a10decce5bc3daf56c98484dbcc4d2f.jpg?crop=0x214-1828x1588&format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -367,7 +352,7 @@ export const mockShots = [
   },
   {
     id: 27,
-    title: "Fitness Goal Tracker",
+    title: "Pinnacle Design Lab Vector Sketches",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42726422/file/original-6d806b24502bcd40cfd0abf3183a3aa5.png?format=webp&resize=320x240&vertical=centerr",
     views: 18700,
@@ -381,7 +366,7 @@ export const mockShots = [
   },
   {
     id: 28,
-    title: "Fitness Goal Tracker",
+    title: "Futuristic AI-Powered Web Healthcare Dashboard",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42724468/file/original-3d32807cd8ffc0a6ecf41c455900d88f.png?crop=0x0-3199x2399&format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -395,7 +380,7 @@ export const mockShots = [
   },
   {
     id: 29,
-    title: "Fitness Goal Tracker",
+    title: "Cartoon 3D gorilla mascot",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42726478/file/original-59ab555e5f09e27230d2c26a91b74c1d.png?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -409,7 +394,7 @@ export const mockShots = [
   },
   {
     id: 30,
-    title: "Fitness Goal Tracker",
+    title: "Crypterra - Logo Branding",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42698690/file/still-495c92f10a568bdfae8417e383d9eaf5.png?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -423,7 +408,7 @@ export const mockShots = [
   },
   {
     id: 31,
-    title: "Fitness Goal Tracker",
+    title: "Blind Faith Tertiary Logo",
     imageUrl:
       "https://cdn.dribbble.com/userupload/37427804/file/original-aa559338120603153448286fa13ad492.jpg?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -437,7 +422,7 @@ export const mockShots = [
   },
   {
     id: 32,
-    title: "Fitness Goal Tracker",
+    title: "Website for a Clothing Brand - Aurae",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42727383/file/original-469b868e8d0e75f9cfd0be239401e6ae.png?format=webp&resize=320x240&vertical=center",
     views: 18700,
@@ -451,7 +436,7 @@ export const mockShots = [
   },
   {
     id: 33,
-    title: "Fitness Goal Tracker",
+    title: "Kleso Telesio - Logo Design",
     imageUrl:
       "https://cdn.dribbble.com/userupload/42727015/file/original-a0f6515bd7f7879e5500a23f3ea44f9d.jpg?format=webp&resize=320x240&vertical=center",
     views: 18700,
