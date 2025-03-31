@@ -175,7 +175,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Marcus Chen",
       avatarUrl:
         "https://cdn.dribbble.com/users/2587130/avatars/small/f4479b3fc90616017f15bcac76e1d7ad.png?1627036411",
       isPro: false
@@ -189,7 +189,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Olivia Parker",
       avatarUrl:
         "https://cdn.dribbble.com/users/14095940/avatars/small/e584c0a059b6c7c4f4c23852153e5521.png?1669730203",
       isPro: false
@@ -203,7 +203,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Thomas Wright",
       avatarUrl:
         "https://cdn.dribbble.com/users/1171903/avatars/small/53561cdb4acfea5898d87c2a46d6dae6.jpg?1670761879",
       isPro: false
@@ -217,7 +217,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Sophia Martinez",
       avatarUrl:
         "https://cdn.dribbble.com/users/18792355/avatars/small/29bf893a67b0be024beb5472a5508432.jpg?1736765096",
       isPro: false
@@ -231,7 +231,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Lucas Anderson",
       avatarUrl:
         "https://cdn.dribbble.com/users/1937255/avatars/small/6e35b9da3c65833fb679281533cbab83.png?1562415677",
       isPro: false
@@ -245,13 +245,12 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Ryan Foster",
       avatarUrl:
         "https://cdn.dribbble.com/users/107759/avatars/small/b718a83234554558bf21578364cc03ea.png?1676050868",
       isPro: false
     }
   },
-
   {
     id: 20,
     title: "Tuna",
@@ -260,7 +259,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Ethan Cooper",
       avatarUrl:
         "https://cdn.dribbble.com/users/1132234/avatars/small/fdb6ce3690c7899abde9f337391ef8fa.jpg?1587811697",
       isPro: false
@@ -274,7 +273,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Ava Thompson",
       avatarUrl:
         "https://cdn.dribbble.com/users/77598/avatars/small/bc40b5a7130b77f4385c47a79d9d71d2.png?1547570222",
       isPro: false
@@ -288,7 +287,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Noah Wilson",
       avatarUrl:
         "https://cdn.dribbble.com/users/2297167/avatars/small/19a58ab13f71b7bbe4820bf8a9677d8f.png?1735330620",
       isPro: false
@@ -302,7 +301,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Isabella Lee",
       avatarUrl:
         "https://cdn.dribbble.com/users/14228077/avatars/small/0ddad37879c5ad169f685c663beba922.png?1693571474",
       isPro: false
@@ -316,7 +315,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "William Taylor",
       avatarUrl:
         "https://cdn.dribbble.com/users/544452/avatars/small/787509c98eb48cdd8d09563787a65c5d.png?1715611535",
       isPro: false
@@ -330,7 +329,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Mia Johnson",
       avatarUrl:
         "https://cdn.dribbble.com/users/458522/avatars/small/62c25a673fa0c68a85418c4d8803b144.png?1729184934",
       isPro: false
@@ -344,7 +343,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Benjamin Clark",
       avatarUrl:
         "https://cdn.dribbble.com/users/1633085/avatars/small/6d1fd95ba8f0bacb245d0ccb7c434cea.jpg?1736366564",
       isPro: false
@@ -358,7 +357,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Charlotte White",
       avatarUrl:
         "https://cdn.dribbble.com/users/3825057/avatars/small/e3d7cb6ed0671937f1a7226e2cc449f1.png?1581940719",
       isPro: false
@@ -372,7 +371,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Henry Rodriguez",
       avatarUrl:
         "https://cdn.dribbble.com/users/2909840/avatars/small/b23e8b024594a21af635b24488dc3436.png?1699019651",
       isPro: false
@@ -386,7 +385,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Zoe Garcia",
       avatarUrl:
         "https://cdn.dribbble.com/users/6848313/avatars/small/0fc82952cfd3b6d1e496259ff75acadf.png?1611172914",
       isPro: false
@@ -400,7 +399,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Leo Martinez",
       avatarUrl:
         "https://cdn.dribbble.com/users/4626561/avatars/small/3e7a9cae12ddff5464716c73428efe8f.jpg?1631241699",
       isPro: false
@@ -414,7 +413,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Victoria Adams",
       avatarUrl:
         "https://cdn.dribbble.com/users/3365798/avatars/small/27142d0984a19231593be35a9972bbc4.jpg?1673891024",
       isPro: false
@@ -428,7 +427,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Sebastian King",
       avatarUrl:
         "https://cdn.dribbble.com/users/466659/avatars/small/faff973d070ece355f9ac1280b5aa1c9.png?1697203398",
       isPro: false
@@ -442,7 +441,7 @@ export const mockShots = [
     views: 18700,
     likes: 2198,
     user: {
-      name: "Michael Scott",
+      name: "Amelia Brooks",
       avatarUrl:
         "https://cdn.dribbble.com/users/234141/avatars/small/45a4fca94b23f2af28015d1c5db4f844.png?1705062453",
       isPro: false
