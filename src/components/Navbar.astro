@@ -52,7 +52,7 @@ const hireDesignerDropdown: DropdownItem[] = [
 ];
 ---
 
-<nav class="fixed top-0 left-0 right-0 bg-white z-50">
+<nav class="fixed top-0 left-0 right-0 bg-white z-50  leading-[28px]">
   <div class="max-w-[96vw] mx-auto xl:px-4">
     <div class="flex items-center justify-between h-[60px] lg:h-[90px] max-sm:px-2">
       <div class="flex items-center">
@@ -61,9 +61,9 @@ const hireDesignerDropdown: DropdownItem[] = [
           class="xl:hidden flex flex-col justify-center w-[20px] h-[24px] mr-6"
           aria-label="Main menu"
         >
-          <span class="block w-[24px] h-[3px] bg-[#6e6d7a] mb-[2px]"></span>
-          <span class="block w-[17px] h-[3px] bg-[#6e6d7a] my-[2px]"></span>
-          <span class="block w-[12px] h-[3px] bg-[#6e6d7a] mt-[2px]"></span>
+          <span class="block w-[24px] h-[3px] bg-black mb-[2px]"></span>
+          <span class="block w-[17px] h-[3px] bg-black my-[2px]"></span>
+          <span class="block w-[12px] h-[3px] bg-black mt-[2px]"></span>
         </button>
 
         <a href="/" class="logo text-[#0d0c22] text-[20px] hover:opacity-80 transition-opacity xl:mr-16">
@@ -78,7 +78,7 @@ const hireDesignerDropdown: DropdownItem[] = [
             <div class="relative group">
               <a
                 href={link.href}
-                class="text-[#6e6d7a] hover:text-[#0d0c22] text-[15px] font-medium flex items-center"
+                class="text-black hover:text-[#0d0c22] text-[15px] font-medium flex items-center"
               >
                 {link.name}
                 {link.hasDropdown && (
@@ -97,7 +97,7 @@ const hireDesignerDropdown: DropdownItem[] = [
                         ? <hr class="my-2 border-[#e7e7e9]" />
                         : <a
                             href={item.href}
-                            class={`block px-4 py-2 text-[14px] text-[#6e6d7a] hover:text-[#0d0c22] font-['Mona_Sans'] ${
+                            class={`block px-4 py-2 text-[14px] text-black hover:text-[#0d0c22] font-['Mona_Sans'] ${
                               item.isSpecial ? "font-bold" : ""
                             }`}
                           >
@@ -116,10 +116,10 @@ const hireDesignerDropdown: DropdownItem[] = [
                     {hireDesignerDropdown.map((item) => (
                       <a
                         href={item.href}
-                        class="block px-4 py-[10px] text-[14px] flex items-center gap-3 font-['Mona_Sans'] group/item"
+                        class="px-4 py-[10px] text-[14px] flex items-center gap-3 font-['Mona_Sans'] group/item"
                       >
-                        {item.icon && <span class="text-[#6e6d7a] group-hover/item:text-[#0d0c22] shrink-0" set:html={item.icon} />}
-                        <span class="text-[#6e6d7a] group-hover/item:text-[#0d0c22] font-medium">{item.name}</span>
+                        {item.icon && <span class="text-black group-hover/item:text-[#0d0c22] shrink-0" set:html={item.icon} />}
+                        <span class="text-black group-hover/item:text-[#0d0c22] font-medium">{item.name}</span>
                       </a>
                     ))}
                   </div>
@@ -133,13 +133,13 @@ const hireDesignerDropdown: DropdownItem[] = [
       <div class="flex items-center space-x-4">
         <a
           href="/#"
-          class="hidden lg:block text-[14px] text-[#6e6d7a] hover:text-[#0d0c22] font-['Mona_Sans'] font-medium"
+          class="hidden lg:block text-[14px] text-black hover:text-[#0d0c22] font-['Mona_Sans',_'Helvetica_Neue',_Helvetica,_Arial,_sans-serif] font-bold"
         >
           Sign in
         </a>
         <a
           href="/#"
-          class="text-[14px] font-['Mona_Sans'] font-medium px-4 py-2 rounded-full text-white bg-[#0d0c22] hover:bg-[#2d2b42] transition-colors"
+          class="text-[14px] font-['Mona_Sans',_'Helvetica_Neue',_Helvetica,_Arial,_sans-serif] font-bold px-4 py-2 rounded-full text-white bg-[#0d0c22] hover:bg-[#2d2b42] transition-colors"
         >
           Sign up
         </a>
@@ -153,7 +153,7 @@ const hireDesignerDropdown: DropdownItem[] = [
       {navLinks.map((link) => (
         <a
           href={link.href}
-          class="block py-2 text-[14px] text-[#6e6d7a] hover:text-[#0d0c22] font-medium"
+          class="block py-2 text-[14px] text-black hover:text-[#0d0c22] font-medium"
         >
           {link.name}
         </a>
