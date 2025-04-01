@@ -1,19 +1,58 @@
 ---
-import { mockShots } from '../data/shots.js';
-import ShotCard from './ShotCard.astro';
+import { mockShots } from "../data/shots.js";
+import ShotCard from "./ShotCard.astro";
 
 const shots = mockShots;
 ---
 
-<section class="shots-grid mx-auto ">
-  <div class="">
-    <div class="grid gap-10 justify-center" style="grid-template-columns: repeat(auto-fill, 318px);">
-      {shots.map((shot) => (
-        <ShotCard shot={shot} />
-      ))}
+<section class="shots-grid mx-auto">
+  <div>
+    <div
+      class="grid gap-10 justify-center"
+      style="grid-template-columns: repeat(auto-fill, 318px);"
+    >
+      {shots.map((shot) => <ShotCard shot={shot} />)}
     </div>
   </div>
+  <div class="flex justify-center">
+    <button
+      class="text-[13px] px-6 bg-black rounded-full text-white font-bold font-['Mona_Sans',_'Helvetica_Neue',_Helvetica,_Arial,_sans-serif] py-2"
+      >Sign up to continue</button
+    >
+    <button
+      id="goToTop"
+      class="p-3 rounded-full bg-gray-200 fixed bottom-8 right-8 hover:bg-gray-300 transition-colors"
+    >
+      <svg
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 19V5M12 5L5 12M12 5L19 12"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </button>
+  </div>
 </section>
+
+<script>
+  const goToTopButton = document.getElementById("goToTop");
+
+  if (goToTopButton) {
+    goToTopButton.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
+</script>
 
 <style>
   .shots-grid {
