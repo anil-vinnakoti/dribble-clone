@@ -8,8 +8,7 @@ const shots = mockShots;
 <section class="shots-grid mx-auto">
   <div>
     <div
-      class="grid gap-10 justify-center"
-      style="grid-template-columns: repeat(auto-fill, 318px);"
+      class="grid gap-8 justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
       {shots.map((shot) => <ShotCard shot={shot} />)}
     </div>
@@ -58,11 +57,5 @@ const shots = mockShots;
   .shots-grid {
     padding: 2rem 0;
     max-width: 92vw;
-  }
-
-  @media (min-width: 1536px) {
-    .container {
-      max-width: 1504px;
-    }
   }
 </style>
