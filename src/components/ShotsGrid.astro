@@ -1,6 +1,7 @@
 ---
 import { mockShots } from "../data/shots.js";
 import ShotCard from "./ShotCard.astro";
+import Carousel from "./Carousel.astro";
 
 const shots = mockShots;
 ---
@@ -13,9 +14,9 @@ const shots = mockShots;
       {shots.map((shot) => <ShotCard shot={shot} />)}
     </div>
   </div>
-  <div class="flex justify-center">
+  <div class="flex justify-center mt-8">
     <button
-      class="text-[13px] px-6 bg-black rounded-full text-white font-bold font-['Mona_Sans',_'Helvetica_Neue',_Helvetica,_Arial,_sans-serif] py-2"
+      class="text-[13px] px-6 bg-black rounded-full text-white font-bold font-['Mona_Sans',_'Helvetica_Neue',_Helvetica,_Arial,_sans-serif] py-3"
       >Sign up to continue</button
     >
     <button
@@ -38,6 +39,8 @@ const shots = mockShots;
       </svg>
     </button>
   </div>
+
+  <Carousel />
 </section>
 
 <script>

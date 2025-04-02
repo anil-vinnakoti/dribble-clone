@@ -1,0 +1,72 @@
+---
+const categories = [
+  { name: "Product Design", imageUrl: "https://cdn.dribbble.com/userupload/16328392/file/original-89f6591f2e6436c0c05aa6addc02ff89.png?format=webp&resize=200x150&vertical=center" },
+  { name: "Illustration", imageUrl: "https://cdn.dribbble.com/userupload/18478004/file/original-747d181ffb3bce1f4b735e60f5376875.jpg?format=webp&resize=200x150&vertical=center" },
+  { name: "Mobile", imageUrl: "https://cdn.dribbble.com/userupload/13724934/file/still-a4504f5e9bcc90ecf2fa621ed94b9571.png?format=webp&resize=200x150&vertical=center" },
+  { name: "Print", imageUrl: "https://cdn.dribbble.com/userupload/15609268/file/original-e89c8d27fbc2af233e69c62ef6d2c990.jpg?format=webp&resize=200x150&vertical=center" },
+  { name: "Branding", imageUrl: "https://cdn.dribbble.com/userupload/15260166/file/original-318cc256f6c42eb70cb27f4346fca69b.jpg?format=webp&resize=200x150&vertical=center" },
+  { name: "Web Design", imageUrl: "https://cdn.dribbble.com/userupload/17828256/file/original-7bc57b57a1bc1bf08e4ff18d9db23c56.png?crop=0x0-2400x1800&format=webp&resize=200x150&vertical=center" },
+  { name: "Typography", imageUrl: "https://cdn.dribbble.com/userupload/42646209/file/original-9f07e9b0227091afd13d7748feb3b734.jpg?format=webp&resize=200x150&vertical=center" },
+  { name: "Animation", imageUrl: "https://cdn.dribbble.com/userupload/16184037/file/still-4ce79e533c71a078a85cf2d4ef5e9a5a.png?format=webp&resize=200x150&vertical=center" },
+];
+---
+
+<div class="carousel-container mt-12">
+  <div class="carousel" id="carousel">
+    {categories.concat(categories).map((category, index) => (
+      <div class="carousel-item" >
+        <img src={category.imageUrl} alt={category.name} />
+        <p class="text-left font-bold font-['Mona_Sans',_'Helvetica_Neue',_Helvetica,_Arial,_sans-serif]">{category.name}</p>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+
+  .carousel {
+    display: flex;
+    gap: 32px;
+    animation: scroll 30s linear infinite;
+    will-change: transform;
+    transition: animation-play-state 1s ease; /* Smooth transition for pause effect */
+  }
+
+  .carousel-item {
+    flex: 0 0 auto;
+    text-align: center;
+    width: 200px;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .carousel-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .carousel:hover {
+    animation-play-state: paused;
+  }
+</style>
